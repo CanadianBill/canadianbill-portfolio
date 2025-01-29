@@ -69,6 +69,10 @@ h5 {
  	width: 25em;
 }
 .header-contact-link { font-size: 1.5em }
+.navbar {
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
 .navbar-brand {
 	padding: 0;
 	line-height: 0;

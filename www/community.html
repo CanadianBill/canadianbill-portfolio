@@ -24,47 +24,46 @@
 </head>
 
 <body is="dmx-app" id="index">
-    <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
-        <div class="bg-transparent container">
-            <div class="row col-12">
-                <div class="col col-3">
-                    <a class="navbar-brand" href="#">
-                        <div class="bg-transparent container">
-                            <div class="row flex-nowrap">
-                                <div class="col col-xs-2">
-                                    <video autoplay="" loop="" muted="" playsinline="" class="nav-leaf">
-                                        <source src="assets/videos/leaf-glimmer-512-mp4">
-                                        <source src="assets/videos/leaf-glimmer-512-webm.webm">
-                                    </video>
-                                </div>
-                                <div class="col col-xs-10 align-self-center" style="padding-left:0;padding-right:0">
-                                    <p class="navbar-brand-text">CanadianBill</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-6">
-                    <div id="navbar-collapse" class="collapse navbar-collapse flex-nowrap">
-                        <div class="navbar-nav w-100 justify-content-center">
-                            <a class="nav-item nav-link" href="index.html">root</a>
-                            <a class="nav-item nav-link active" href="garrysmod.html">gmod</a>
-                            <a class="nav-item nav-link active" href="maps.html">maps</a>
-                            <a class="nav-item nav-link active" href="community.html">community</a>
-                        </div>
+    <nav class="navbar navbar-toggleable navbar-inverse justify-content-center navbar-expand-lg bg-light navbar-light sticky-top">
+
+        <a class="navbar-brand d-flex w-100 mr-0" href="#">
+            <div class="bg-transparent container" style="margin:0 0 0 0">
+                <div class="row flex-nowrap">
+                    <div class="col align-self-center" style="padding-left:0;padding-right:0">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <video autoplay="" loop="" muted="" playsinline="" class="nav-leaf">
+                            <source src="assets/videos/leaf-glimmer-512-mp4">
+                            <source src="assets/videos/leaf-glimmer-512-webm.webm">
+                        </video>
+                    </div>
+                    <div class="col align-self-center" style="padding-left:0;padding-right:0">
+                        <p class="navbar-brand-text">CanadianBill</p>
                     </div>
                 </div>
-                <div class="col col-3">
-                    <p></p>
-                </div>
             </div>
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <div class="navbar-nav w-100 justify-content-center">
+                    <a class="nav-item nav-link" href="index.html">root</a>
+                    <a class="nav-item nav-link" href="garrysmod.html">gmod</a>
+                    <a class="nav-item nav-link" href="maps.html">maps</a>
+                    <a class="nav-item nav-link active" href="community.html">community</a>
+                </div>
+            </ul>
+        </div>
+
+        <div class="d-flex w-100">
+            <div></div>
         </div>
     </nav>
     <section class="bg-dark">
         <div class="container bg-transparent">
-
-
-
             <div class="row">
                 <div class="col-12 text-center">
                     <h2 class="section-title text-light">community</h2>
