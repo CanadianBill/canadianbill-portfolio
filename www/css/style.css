@@ -1,7 +1,6 @@
 /* CSS Document */
 @font-face { font-family: Futura; src: url('../assets/fonts/FuturaCyrillicLight.ttf'); } 
 @font-face { font-family: Montserrat; src: url('../assets/fonts/Montserrat-Regular.ttf'); } 
-@font-face { font-family: TitilliumWeb; src: url('../assets/fonts/TitilliumWeb-Regular.ttf'); } 
  
 section {
 	padding: 30px 0 50px;
