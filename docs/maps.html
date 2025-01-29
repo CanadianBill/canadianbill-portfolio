@@ -12,6 +12,7 @@
     <!-- Custom CSS styles-->
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 <body id="index">
@@ -72,31 +73,36 @@
                         </div>
                     </div>
                     <div class="row align-items-center justify-content-center row-cols-1 pt-4 pb-4" bg-transparent style="background-color:rgba(57, 181, 74, 0.0)">
-                        <div is="dmx-swiper" id="cp_cowerhouse_swiper" centered-slides="true" rewind="true" autoplay="true" grab-cursor="true" navigation="true" style="--swiper-theme-color: #39b54a;--swiper-pagination-bullet-inactive-color: #226C2C;--swiper-pagination-bullet-inactive-opacity: 0.6;" auto-height="true" space-between="32" loop="true" pagination="bullets" style="">
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/dLYzP5U.mp4"></video>
+                        <div id="cowerhouseSwiper" class="swiper swiper-cowerhouse">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/dLYzP5U.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/p9usPM0.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/BB8XjPW.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/9TtUEF6.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/x6jKgY9.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/XuNAFJD.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/n6iRqTu.mp4"></video>
+                                </div>
+                                <div class="swiper-slide">
+                                    <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/KojN31U.mp4"></video>
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/p9usPM0.mp4"></video>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/BB8XjPW.mp4"></video>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/9TtUEF6.mp4"></video>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/x6jKgY9.mp4"></video>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/XuNAFJD.mp4"></video>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/n6iRqTu.mp4"></video>
-                            </div>
-                            <div class="swiper-slide">
-                                <video class="bb_video bb_video_autoplay bb_video_loop" width="100%" muted="" autoplay="" loop="" src="https://i.imgur.com/KojN31U.mp4"></video>
-                            </div>
+                            <div id="cowerhouseSwiperPagination" class="swiper-pagination swiper-cowerhouse"></div>
+                            <div id="cowerhouseSwiperButtonPrev" class="swiper-button-prev swiper-cowerhouse"></div>
+                            <div id="cowerhouseSwiperButtonNext" class="swiper-button-next swiper-cowerhouse"></div>
                         </div>
                     </div>
                 </div>
@@ -479,30 +485,32 @@
                     </div>
                 </div>
                 <div class="col-4 text-xl-right">
-                    <div is="dmx-swiper" id="ttt_mc_island17_swiper_1" class="swiper-no-swiping" vertical="true" rewind="true" autoplay="true" loop="true" style="max-height:32em" slides-per-view="2">
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842565/9ABA24ED7147519FC4184B9CD77C862590CD0C38/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842800/F25B2643B731ABEF3B7B116ED8FC6AED5380A83A/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843061/E2018BA4E86ADB2D361E342916E81C9A404DAC54/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843446/107987BBE4D8A6F3DF00B2EAB3AA2419FCF9055E/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843625/FEAE90764458B47927B831513003CB3E59949C86/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843805/5308E29D5E00A96AB1461FDAF470C6CB9A7D1B35/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844690/BCB876555A9C183EBAF82E1FC10841C360E2C467/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844875/9AAF9A28C684ADF92B1DF531D65E2BBE2D85568D/" class="img-square">
+                    <div id="mcIslandSwiper1" class="swiper swiper-no-swiping" style="max-height:32em">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842565/9ABA24ED7147519FC4184B9CD77C862590CD0C38/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842800/F25B2643B731ABEF3B7B116ED8FC6AED5380A83A/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843061/E2018BA4E86ADB2D361E342916E81C9A404DAC54/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843446/107987BBE4D8A6F3DF00B2EAB3AA2419FCF9055E/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843625/FEAE90764458B47927B831513003CB3E59949C86/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843805/5308E29D5E00A96AB1461FDAF470C6CB9A7D1B35/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844690/BCB876555A9C183EBAF82E1FC10841C360E2C467/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844875/9AAF9A28C684ADF92B1DF531D65E2BBE2D85568D/" class="img-square">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -510,30 +518,32 @@
             <br>
             <div class="row">
                 <div class="col-4 text-xl-left">
-                    <div is="dmx-swiper" id="ttt_mc_island17_swiper_2" class="swiper-no-swiping" vertical="true" rewind="true" autoplay="true" loop="true" style="max-height:32em" slides-per-view="2">
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843061/E2018BA4E86ADB2D361E342916E81C9A404DAC54/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843446/107987BBE4D8A6F3DF00B2EAB3AA2419FCF9055E/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843625/FEAE90764458B47927B831513003CB3E59949C86/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843805/5308E29D5E00A96AB1461FDAF470C6CB9A7D1B35/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844690/BCB876555A9C183EBAF82E1FC10841C360E2C467/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844875/9AAF9A28C684ADF92B1DF531D65E2BBE2D85568D/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842565/9ABA24ED7147519FC4184B9CD77C862590CD0C38/" class="img-square">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842800/F25B2643B731ABEF3B7B116ED8FC6AED5380A83A/" class="img-square">
+                    <div id="mcIslandSwiper2" class="swiper swiper-no-swiping" style="max-height:32em">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842565/9ABA24ED7147519FC4184B9CD77C862590CD0C38/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711842800/F25B2643B731ABEF3B7B116ED8FC6AED5380A83A/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843061/E2018BA4E86ADB2D361E342916E81C9A404DAC54/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843446/107987BBE4D8A6F3DF00B2EAB3AA2419FCF9055E/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843625/FEAE90764458B47927B831513003CB3E59949C86/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711843805/5308E29D5E00A96AB1461FDAF470C6CB9A7D1B35/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844690/BCB876555A9C183EBAF82E1FC10841C360E2C467/" class="img-square">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://steamuserimages-a.akamaihd.net/ugc/916911015711844875/9AAF9A28C684ADF92B1DF531D65E2BBE2D85568D/" class="img-square">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -582,10 +592,45 @@
             <span class="text-muted">© 2025 CanadianBill</span>
         </div>
     </footer>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const cowerhouseSwiper = new Swiper('#cowerhouseSwiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoHeight: true,
+            centeredSlides: true,
+            autoplay: true,
+            grabCursor: true,
+            spaceBetween: 32,
+            pagination: {
+                el: '#cowerhouseSwiperPagination',
+                type: 'bullets'
+            },
+            navigation: {
+                nextEl: '#cowerhouseSwiperButtonNext',
+                prevEl: '#cowerhouseSwiperButtonPrev'
+            }
+        });
+        const mcIsland17Swiper1 = new Swiper('#mcIslandSwiper1', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            slidesPerView: 2
+        });
+        const mcIsland17Swiper2 = new Swiper('#mcIslandSwiper2', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: true,
+            autoplay: true,
+            slidesPerView: 2,
+            initialSlide: 2
+        });
+    </script>
 </body>
 
 </html>
