@@ -2,3 +2,6 @@ node_modules
 .svn
 .env
 **/.DS_Store
+**/dmxAppConnect/*
+**/assets/*
+**/bootstrap/*

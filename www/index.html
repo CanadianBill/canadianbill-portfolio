@@ -19,12 +19,15 @@
   <script src="../dmxAppConnect/dmxSwiper/swiper.min.js" defer></script>
   <link rel="stylesheet" href="../dmxAppConnect/dmxAnimateCSS/animate.min.css" />
   <script src="../dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer></script>
+  <script src="../dmxAppConnect/dmxMasonry/dmxMasonry.js" defer></script>
+  <script src="../dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
 </head>
 
 <body is="dmx-app" id="index">
+  <div is="dmx-browser" id="browser1"></div>
   <header id="page-header">
     <div class="jumbotron jumbotron-fluid bg-light mt-n5 mb-n5">
-      <div class="container text-center header-container">
+      <div class="container text-center header-container" style="margin-bottom:-0em">
         <video autoplay="" loop="" muted="" playsinline="" class="header-leaf">
           <source src="assets/videos/leaf-glimmer-512-mp4">
           <source src="assets/videos/leaf-glimmer-512-webm.webm">
@@ -46,166 +49,113 @@
                 <a href="https://www.discord.com/users/canadianbill" class="header-contact-link">discord.com/users/canadianbill</a>
               </div>
             </div>
+
           </div>
-
-
         </div>
-        <div class="d-flex header-leaf"></div>
+        <video autoplay="" loop="" muted="" playsinline="" class="header-leaf"></video>
       </div>
     </div>
+
   </header>
-  <section class="bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3 class="section-title">Portfolio Section</h3>
+  <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top">
+    <div class="bg-transparent container">
+      <div class="row col-12">
+        <div class="col col-3">
+          <a class="navbar-brand" href="#">
+            <div style="display: inline" is="dmx-animate" id="animate10" hideeffect="fadeOutLeftBig" visible="true" showeffect="fadeInLeft" dmx-bind:visible="browser1.scrollY.offset&gt;256">
+              <div class="bg-transparent container">
+                <div class="row">
+                  <div class="col">
+                    <video autoplay="" loop="" muted="" playsinline="" class="nav-leaf">
+                      <source src=" assets/videos/leaf-glimmer-512-mp4">
+                      <source src="assets/videos/leaf-glimmer-512-webm.webm">
+                    </video>
+                  </div>
+                  <div class="col align-self-center" style="padding-left:0;padding-right:0">
+                    <p class="navbar-brand-text">CanadianBill</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
+        <div class="col col-6">
+          <div id="navbar-collapse" class="collapse navbar-collapse">
+            <div class="navbar-nav w-100 justify-content-center">
+              <a class="nav-item nav-link active" href="index.html">root</a>
+              <a class="nav-item nav-link" href="garrysmod.html">gmod</a>
+              <a class="nav-item nav-link" href="maps.html">maps</a>
+              <a class="nav-item nav-link" href="community.html">community</a>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4">
-          <div class="card"> <img class="card-img-top" src="http://via.placeholder.com/800x533" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project description goes here ...</p>
-              <a href="#" class="btn btn-primary btn-sm">See Details</a>
-            </div>
-          </div>
+        <div class="col col-3">
+          <p></p>
         </div>
       </div>
     </div>
+  </nav>
+  <section class="bg-dark">
+    <div class="container bg-transparent">
 
-  </section>
-  <section class="bg-light">
-    <div class="container">
+
       <div class="row">
         <div class="col-12 text-center">
-          <h3 class="section-title">Section Heading</h3>
+          <h2 class="section-title text-light">root</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-4"> <img class="img-fluid" src="http://via.placeholder.com/480x320"> </div>
-            <div class="col-8">
-              <h5>Heading</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-            </div>
-          </div>
+        <div class="col">
         </div>
-        <div class="col-12 col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-4"> <img class="img-fluid" src="http://via.placeholder.com/480x320"> </div>
-            <div class="col-8">
-              <h5>Heading</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="accordion" id="accordion1">
+            <div class="card">
+              <div class="card-header" id="accordion1_headingOne">
+                <h5 class="mb-0">
+                  <button id="accordion1_collapseOne_Btn" class="btn btn-link text-primary" type="button" data-toggle="collapse" data-target="#accordion1_collapseOne" aria-expanded="true" aria-controls="collapseOne">2018 - now</button>
+                </h5>
+              </div>
+              <div id="accordion1_collapseOne" class="collapse" is="dmx-bs4-collapse" aria-labelledby="accordion1_headingOne" data-parent="#accordion1" show="true">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-4"> <img class="img-fluid" src="http://via.placeholder.com/480x320"> </div>
-            <div class="col-8">
-              <h5>Heading</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <div class="card">
+              <div class="card-header" id="accordion1_headingTwo">
+                <h5 class="mb-0">
+                  <button id="accordion1_collapseTwo_Btn" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion1_collapseTwo" aria-expanded="false" aria-controls="collapseTwo">2011 - 2018</button>
+                </h5>
+              </div>
+              <div id="accordion1_collapseTwo" class="collapse" is="dmx-bs4-collapse" aria-labelledby="accordion1_headingTwo" data-parent="#accordion1">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6">
-          <div class="row">
-            <div class="col-4"> <img class="img-fluid" src="http://via.placeholder.com/480x320"> </div>
-            <div class="col-8">
-              <h5>Heading</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            <div class="card">
+              <div class="card-header" id="accordion1_headingThree">
+                <h5 class="mb-0">
+                  <button id="accordion1_collapseThree_Btn" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#accordion1_collapseThree" aria-expanded="false" aria-controls="collapseThree">2008 - 2011</button>
+                </h5>
+              </div>
+              <div id="accordion1_collapseThree" class="collapse" is="dmx-bs4-collapse" aria-labelledby="accordion1_headingThree" data-parent="#accordion1">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3 class="section-title">Contact Form</h3>
-        </div>
-      </div>
-    </div>
   </section>
   <footer id="page-footer" class="bg-light">
     <div class="container">
-      <span class="text-muted">Copyright Your Name</span>
+      <span class="text-muted">© 2025 CanadianBill</span>
     </div>
   </footer>
   <!-- Optional JavaScript -->

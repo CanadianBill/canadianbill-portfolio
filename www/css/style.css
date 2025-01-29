@@ -20,7 +20,7 @@ p {
 	font-family: "Futura";
 }
 a {
-	font-family: "Futura";
+	font-family: "Futura"
 }
 a:link {
   color: #FF0000;
@@ -46,7 +46,7 @@ h3 {
 h4 {
 	font-family: "Montserrat";
 }
-.header-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.header-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; z-index: 999; }
 .header-leaf {
 	width: 16em;
 	height: 16em;
@@ -54,9 +54,28 @@ h4 {
 .header-canadianbill { font-size: 6em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .header-contact-container {
 	margin: auto;
- 	width: 24em;
+ 	width: 25em;
 }
 .header-contact-link { font-size: 1.5em }
+.navbar-brand {
+	padding: 0;
+	line-height: 0;
+	margin-right: 0;
+}
+.navbar-collapse{
+
+}
+.navbar-brand-text {
+	font-family: "Montserrat";
+	line-height: normal;
+	margin-bottom: 0em;
+}
+.nav-leaf {
+	width: 2em;
+	height: 2em;
+	max-width: 2em;
+}
+.nav-item {font-size: 1.5em; padding: 0; }
 :root {
   --swiper-pagination-bullet-size: 4px;
   --swiper-pagination-bullet-vertical-gap: 4px;
