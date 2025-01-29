@@ -1,0 +1,63 @@
+/* CSS Document */
+@font-face { font-family: Futura; src: url('../assets/fonts/FuturaCyrillicLight.ttf'); } 
+@font-face { font-family: Montserrat; src: url('../assets/fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: TitilliumWeb; src: url('../assets/fonts/TitilliumWeb-Regular.ttf'); } 
+ 
+section {
+	padding: 30px 0 50px;
+}
+h3.section-title {
+	margin-bottom: 40px;
+}
+.card {
+	margin-bottom: 30px;
+}
+#page-footer {
+	padding: 15px 0 10px;
+	font-size: 12px;
+}
+p {
+	font-family: "Futura";
+}
+a {
+	font-family: "Futura";
+}
+a:link {
+  color: #FF0000;
+}
+a:visited {
+  color: #FF0000;
+}
+a:hover {
+  color: #AA0000;
+}
+a:active {
+  color: #FF0000;
+}
+h1 {
+	font-family: "Montserrat";
+}
+h2 {
+	font-family: "Montserrat";
+}
+h3 {
+	font-family: "Montserrat";
+}
+h4 {
+	font-family: "Montserrat";
+}
+.header-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.header-leaf {
+	width: 16em;
+	height: 16em;
+}
+.header-canadianbill { font-size: 6em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.header-contact-container {
+	margin: auto;
+ 	width: 24em;
+}
+.header-contact-link { font-size: 1.5em }
+:root {
+  --swiper-pagination-bullet-size: 4px;
+  --swiper-pagination-bullet-vertical-gap: 4px;
+}

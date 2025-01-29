@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script src="../dmxAppConnect/dmxAppConnect.js"></script>
   <!-- Required meta tags -->
   <title>CanadianBill Portfolio</title>
   <meta charset="utf-8">
@@ -12,21 +13,42 @@
   <!-- Custom CSS styles-->
   <link rel="stylesheet" href="css/style.css">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../dmxAppConnect/dmxBootstrap4Navigation/dmxBootstrap4Navigation.js" defer></script>
+  <script src="../dmxAppConnect/dmxSwiper/dmxSwiper.js" defer></script>
+  <link rel="stylesheet" href="../dmxAppConnect/dmxSwiper/swiper.min.css" />
+  <script src="../dmxAppConnect/dmxSwiper/swiper.min.js" defer></script>
+  <link rel="stylesheet" href="../dmxAppConnect/dmxAnimateCSS/animate.min.css" />
+  <script src="../dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer></script>
 </head>
 
-<body>
+<body is="dmx-app" id="index">
   <header id="page-header">
-    <div class="jumbotron jumbotron-fluid bg-light">
+    <div class="jumbotron jumbotron-fluid bg-light mt-n5 mb-n5">
       <div class="container text-center header-container">
         <video autoplay="" loop="" muted="" playsinline="" class="header-leaf">
           <source src="assets/videos/leaf-glimmer-512-mp4">
           <source src="assets/videos/leaf-glimmer-512-webm.webm">
         </video>
         <div class="container text-center">
-          <h1 class="header-canadianbill">
-            CanadianBill
-          </h1>
-          <p>Enter your content here</p>
+          <h1 class="header-canadianbill">CanadianBill</h1>
+          <div class="header-contact-container">
+            <div is="dmx-swiper" id="headercontactswiper" centered-slides="true" vertical="true" autoplay="true" loop="true" auto-height="true" style="height: 2.5em; margin-top: -1.5em; --swiper-pagination-color: #f00;" pagination="bullets" rewind="true">
+              <div class="swiper-slide">
+                <a href="mailto:canadianbill@gmail.com" class="header-contact-link">canadianbill@gmail.com</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://steamcommunity.com/id/canadianbill" class="header-contact-link">steamcommunity.com/id/canadianbill</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.youtube.com/canadianbill" class="header-contact-link">youtube.com/canadianbill</a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://www.discord.com/users/canadianbill" class="header-contact-link">discord.com/users/canadianbill</a>
+              </div>
+            </div>
+          </div>
+
+
         </div>
         <div class="d-flex header-leaf"></div>
       </div>
@@ -123,6 +145,7 @@
         </div>
       </div>
     </div>
+
   </section>
   <section class="bg-light">
     <div class="container">
