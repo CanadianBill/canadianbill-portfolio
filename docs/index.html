@@ -2,154 +2,168 @@
 <html lang="en">
 
 <head>
-  <script src="../dmxAppConnect/dmxAppConnect.js"></script>
-  <!-- Required meta tags -->
-  <title>CanadianBill Portfolio</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!-- Custom CSS styles-->
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="../dmxAppConnect/dmxBootstrap4Navigation/dmxBootstrap4Navigation.js" defer></script>
-  <script src="../dmxAppConnect/dmxSwiper/dmxSwiper.js" defer></script>
-  <link rel="stylesheet" href="../dmxAppConnect/dmxSwiper/swiper.min.css" />
-  <script src="../dmxAppConnect/dmxSwiper/swiper.min.js" defer></script>
-  <link rel="stylesheet" href="../dmxAppConnect/dmxAnimateCSS/animate.min.css" />
-  <script src="../dmxAppConnect/dmxAnimateCSS/dmxAnimateCSS.js" defer></script>
-  <script src="../dmxAppConnect/dmxMasonry/dmxMasonry.js" defer></script>
-  <script src="../dmxAppConnect/dmxBrowser/dmxBrowser.js" defer></script>
+    <!-- Required meta tags -->
+    <title>CanadianBill Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom CSS styles-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function(){
+
+            // hide .navbar first
+            $("#navBrandAnimated").hide();
+
+            // fade in .navbar
+            $(function () {
+                $(window).scroll(function () {
+                    // set distance user needs to scroll before we start fadeIn
+                    if ($(this).scrollTop() < 256) {
+                        $("#navBrandAnimated").fadeOut();
+                    } else {
+                        console.log('no');
+                        $("#navBrandAnimated").fadeIn();
+                    }
+                });
+            });
+
+            });
+        }(jQuery));
+    </script>
 </head>
 
-<body is="dmx-app" id="index">
-  <div is="dmx-browser" id="browser1"></div>
-  <header id="page-header">
-    <div class="jumbotron jumbotron-fluid bg-light mt-n5 mb-n5">
-      <div class="container header-container mb-xl-n4" style="margin-bottom:-0em">
-        <div class="row flex-nowrap" style="margin-top:4em">
-          <div class="col col-12 align-self-lg-center">
-            <div class="header-leaf-container">
-              <video autoplay="" loop="" muted="" playsinline="" class="header-leaf-video">
-                <source src="assets/videos/leaf-glimmer-512-webm.webm">
-              </video>
-            </div>
-            <div class="container text-center">
-              <h1 class="header-canadianbill">CanadianBill</h1>
-              <div class="header-contact-container">
-                <div is="dmx-swiper" id="headercontactswiper" centered-slides="true" vertical="true" autoplay="true" loop="true" style="height: 2.5em; margin-top: -1.5em; --swiper-pagination-color: #f00;" pagination="bullets" rewind="true" auto-height="true">
-                  <div class="swiper-slide">
-                    <a href="mailto:canadianbill@gmail.com" class="header-contact-link">canadianbill@gmail.com</a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://steamcommunity.com/id/canadianbill" class="header-contact-link">steamcommunity.com/id/canadianbill</a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://www.youtube.com/canadianbill" class="header-contact-link">youtube.com/canadianbill</a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="https://www.discord.com/users/canadianbill" class="header-contact-link">discord.com/users/canadianbill</a>
-                  </div>
+<body id="index">
+    <header id="page-header">
+        <div class="jumbotron jumbotron-fluid bg-light mt-n5 mb-n5">
+            <div class="container header-container mb-xl-n4" style="margin-bottom:-0em">
+                <div class="row flex-nowrap" style="margin-top:4em">
+                    <div class="col col-12 align-self-lg-center">
+                        <div class="header-leaf-container">
+                            <video autoplay="" loop="" muted="" playsinline="" class="header-leaf-video">
+                                <source src="assets/videos/leaf-glimmer-512-webm.webm">
+                            </video>
+                        </div>
+                        <div class="container text-center">
+                            <h1 class="header-canadianbill">CanadianBill</h1>
+
+                            <div class="header-contact-container">
+                                <div is="dmx-swiper" id="headercontactswiper" centered-slides="true" vertical="true" autoplay="true" loop="true" style="height: 2.5em; margin-top: -1.5em; --swiper-pagination-color: #f00;" pagination="bullets" rewind="true" auto-height="true">
+                                  <div class="swiper-slide">
+                                    <a href="mailto:canadianbill@gmail.com" class="header-contact-link">canadianbill@gmail.com</a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://steamcommunity.com/id/canadianbill" class="header-contact-link">steamcommunity.com/id/canadianbill</a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.youtube.com/canadianbill" class="header-contact-link">youtube.com/canadianbill</a>
+                                  </div>
+                                  <div class="swiper-slide">
+                                    <a href="https://www.discord.com/users/canadianbill" class="header-contact-link">discord.com/users/canadianbill</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <nav class="navbar navbar-toggleable navbar-inverse justify-content-center navbar-expand-lg bg-light navbar-light sticky-top">
-    <a class="navbar-brand d-flex w-100 mr-0" href="#">
-      <div class="bg-transparent container" style="margin:0 0 0 0">
-        <div class="row flex-nowrap">
-          <div class="col align-self-center" style="padding-left:0">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class="col col-12">
-            <div style="display: inline" is="dmx-animate" id="navBrandAnimated" showeffect="fadeInLeft" dmx-bind:visible="browser1.scrollY.offset&gt;256" hideeffect="fadeOutLeftBig">
-              <div class="row">
-                <video autoplay="" loop="" muted="" playsinline="" class="nav-leaf">
-                  <source src="assets/videos/leaf-glimmer-512-webm.webm">
-                </video>
-                <div class="col align-self-center">
-                  <p class="navbar-brand-text">CanadianBill</p>
+    <nav class="navbar navbar-toggleable navbar-inverse justify-content-center navbar-expand-lg bg-light navbar-light sticky-top">
+        <a class="navbar-brand d-flex w-100 mr-0" href="#">
+            <div class="bg-transparent container" style="margin:0 0 0 0">
+                <div class="row flex-nowrap">
+                    <div class="col align-self-center" style="padding-left:0">
+                        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col col-12">
+                        <div style="display: inline" id="navBrandAnimated">
+                            <div class="row">
+                                <video autoplay="" loop="" muted="" playsinline="" class="nav-leaf">
+                                    <source src="assets/videos/leaf-glimmer-512-webm.webm">
+                                </video>
+                                <div class="col align-self-center">
+                                    <p class="navbar-brand-text">CanadianBill</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </a>
+        </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <div class="navbar-nav w-100 justify-content-center">
-          <a class="nav-item nav-link" href="index.html">root</a>
-          <a class="nav-item nav-link" href="garrysmod.html">gmod</a>
-          <a class="nav-item nav-link" href="maps.html">maps</a>
-          <a class="nav-item nav-link active" href="community.html">community</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <div class="navbar-nav w-100 justify-content-center">
+                    <a class="nav-item nav-link active" href="index.html">root</a>
+                    <a class="nav-item nav-link" href="garrysmod.html">gmod</a>
+                    <a class="nav-item nav-link" href="maps.html">maps</a>
+                    <a class="nav-item nav-link" href="community.html">community</a>
+                </div>
+            </ul>
         </div>
-      </ul>
-    </div>
 
-    <div class="d-flex w-100">
-      <div></div>
-    </div>
-  </nav>
+        <div class="d-flex w-100">
+            <div></div>
+        </div>
+    </nav>
 
-  <section class="bg-dark">
-    <div class="bg-transparent container-fluid">
-      <div class="row" style="height:32em; margin-bottom:-8em">
-        <div class="col-12">
-          <div class="bg-image d-flex align-items-center justify-content-start justify-content-lg-start" style="margin-top:-2em; margin-left:2em; background-image: url(assets/images/canadianbill_self_toddler.png); background-position: 30% 0%; background-repeat: no-repeat; background-size: contain; height: 100%; max-height: 100%">
-            <h2 class="text-white" style="margin-left:0em;margin-right:16em;margin-bottom:2em">i've been at this for a while now</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="height:32em; margin-top:-8em">
-        <div class="col-4">
-          <div></div>
-        </div>
-        <div class="col-8">
-          <div class="bg-image d-flex justify-content-center align-items-center justify-content-lg-center" style="background-image: url(assets/images/canadianbill_self_baby.png); background-position: 80% 50%; background-repeat: no-repeat; background-size: contain; height: 100%; max-height: 100%">
-            <h2 class="text-white" style="margin-left:0em;margin-right:4em;margin-bottom:2em">a long while, really...</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-dark">
-    <div class="bg-transparent container-fluid">
-      <div class="row" style="height:32em">
-        <div class="col">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Boot-up</h4>
-              <p class="card-text">After the <a href="https://en.wikipedia.org/wiki/Freddi_Fish">Freddi Fish</a> days, I soon graduated into waking up in the morning as a six-year-old and booting up the PC to play Day of Defeat, and later still in primary school, occassionally making appearances at the high school LAN club to play Day of Defeat under the name "007" (of course).</p>
-              <p class="card-text">In February of 2005 I started Garry's Mod for the first time and the evolution started--first, piling up props to fight zombies from, then adding simple axis/hydraulic doors and traps controlled from the keyboard numpad, eventually wiring together logic gates to really start to expedite that zombie-maiming. Then I began teaching myself how to program code.</p>
-              <p class="card-text">I've expressed my creativity through Garry's Mod contraptions, Source Engine maps, and creations in other PC games. I post them on my (albiet now generally-dormant) YouTube channel.</p>
-              <p class="card-text">I've since started a career as a Software Engineer. The purpose of this website is to showcase some of that passion.</p>
+    <section class="bg-dark">
+        <div class="bg-transparent container-fluid">
+            <div class="row" style="height:32em; margin-bottom:-8em">
+                <div class="col-12">
+                    <div class="bg-image d-flex align-items-center justify-content-start justify-content-lg-start" style="margin-top:-2em; margin-left:2em; background-image: url(assets/images/canadianbill_self_toddler.png); background-position: 30% 0%; background-repeat: no-repeat; background-size: contain; height: 100%; max-height: 100%">
+                        <h2 class="text-white" style="margin-left:0em;margin-right:16em;margin-bottom:2em">i've been at this for a while now</h2>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="row" style="height:32em; margin-top:-8em">
+                <div class="col-4">
+                    <div></div>
+                </div>
+                <div class="col-8">
+                    <div class="bg-image d-flex justify-content-center align-items-center justify-content-lg-center" style="background-image: url(assets/images/canadianbill_self_baby.png); background-position: 80% 50%; background-repeat: no-repeat; background-size: contain; height: 100%; max-height: 100%">
+                        <h2 class="text-white" style="margin-left:0em;margin-right:4em;margin-bottom:2em">a long while, really...<!-- but not frontend, bear with me...--></h2>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer id="page-footer" class="bg-light">
-    <div class="container">
-      <span class="text-muted">© 2025 CanadianBill</span>
-    </div>
-  </footer>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <section class="bg-dark">
+        <div class="bg-transparent container-fluid">
+            <div class="row" style="height:32em">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Boot-up</h4>
+                            <p class="card-text">After the <a href="https://en.wikipedia.org/wiki/Freddi_Fish">Freddi Fish</a> days, I soon graduated into waking up in the morning as a six-year-old and booting up the PC to play Day of Defeat, and later still in primary school, occassionally making appearances at the high school LAN club to play Day of Defeat under the name "007" (of course).</p>
+                            <p class="card-text">In February of 2005 I started Garry's Mod for the first time and the evolution started--first, piling up props to fight zombies from, then adding simple axis/hydraulic doors and traps controlled from the keyboard numpad, eventually wiring together logic gates to really start to expedite that zombie-maiming. Then I began teaching myself how to program code.</p>
+                            <p class="card-text">I've expressed my creativity through Garry's Mod contraptions, Source Engine maps, and creations in other PC games. I post them on my (albiet now generally-dormant) YouTube channel.</p>
+                            <p class="card-text">I've since started a career as a Software Engineer. The purpose of this website is to showcase some of that passion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="page-footer" class="bg-light">
+        <div class="container">
+            <span class="text-muted">© 2025 CanadianBill</span>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
 
 </html>

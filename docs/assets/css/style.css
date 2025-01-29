@@ -1,6 +1,5 @@
-/* CSS Document */
-@font-face { font-family: Futura; src: url('../assets/fonts/FuturaCyrillicLight.ttf'); } 
-@font-face { font-family: Montserrat; src: url('../assets/fonts/Montserrat-Regular.ttf'); } 
+@font-face { font-family: Futura; src: url('../fonts/FuturaCyrillicLight.ttf'); } 
+@font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Regular.ttf'); } 
  
 section {
 	padding: 30px 0 50px;
@@ -90,9 +89,6 @@ h5 {
 	padding: 0;
 	line-height: 0;
 	margin-right: 0;
-}
-.navbar-collapse{
-
 }
 .navbar-brand-text {
 	font-family: "Montserrat";
