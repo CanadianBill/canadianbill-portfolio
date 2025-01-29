@@ -1,24 +1,24 @@
 {
-  "projectName": "david_portfolio_gaming",
-  "styleFile": "/css/style.css",
-  "assetsFolder": "/assets",
+  "projectName": "canadianbill_portfolio",
+  "styleFile": "/docs/css/style.css",
+  "assetsFolder": "/docs/assets",
   "designFramework": "bootstrap4",
   "frameworks": [
     {
-      "name": "jquery_slim_33",
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "jquery_slim_35",
       "type": "cdn"
     },
     {
-      "name": "fontawesome_4",
+      "name": "fontawesome_6",
       "type": "cdn"
     },
     {
       "name": "bootstrap4",
-      "type": "local"
-    },
-    {
-      "name": "appConnect",
-      "type": "local"
+      "type": "cdn"
     }
   ],
   "runtime": "capacitor",
