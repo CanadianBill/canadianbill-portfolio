@@ -22,6 +22,12 @@ p {
 a {
 	font-family: "Futura"
 }
+dt {
+	font-family: "Futura"
+}
+dd {
+	font-family: "Futura"
+}
 a:link {
   color: #FF0000;
 }
@@ -34,6 +40,9 @@ a:hover {
 a:active {
   color: #FF0000;
 }
+.text-primary {
+  color: #FF0000 !important;
+}
 h1 {
 	font-family: "Montserrat";
 }
@@ -44,6 +53,9 @@ h3 {
 	font-family: "Montserrat";
 }
 h4 {
+	font-family: "Montserrat";
+}
+h5 {
 	font-family: "Montserrat";
 }
 .header-container { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; z-index: 999; }
@@ -74,6 +86,15 @@ h4 {
 	width: 2em;
 	height: 2em;
 	max-width: 2em;
+}
+.card-body-narrow-padding {
+	padding: 6px 6px 6px 6px
+}
+.img-square {
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 16em;
+	height: 16em;
 }
 .nav-item {font-size: 1.5em; padding: 0; }
 :root {
