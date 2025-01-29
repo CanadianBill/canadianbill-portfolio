@@ -1,6 +1,8 @@
 https://rotato.app/blog/transparent-videos-for-the-web
 
+	ffmpeg -i "movie-prores.mov" -crf 30 -b:v 0 -c:v libvpx-vp9 movie-webm.webm
 
+	ffmpeg -i your-file.mov -c:v libx265 -preset slow -crf 28 -pix_fmt yuva420p output.mp4
 
 
 <div class="embed-responsive embed-responsive-16by9">
