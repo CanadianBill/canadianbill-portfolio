@@ -27,38 +27,40 @@
   <div is="dmx-browser" id="browser1"></div>
   <header id="page-header">
     <div class="jumbotron jumbotron-fluid bg-light mt-n5 mb-n5">
-      <div class="container text-center header-container mb-xl-n4" style="margin-bottom:-0em">
-        <video autoplay="" loop="" muted="" playsinline="" class="header-leaf">
-          <source src="assets/videos/leaf-glimmer-512-mp4.mp4">
-          <source src="assets/videos/leaf-glimmer-512-webm.webm">
-        </video>
-        <div class="container text-center">
-          <h1 class="header-canadianbill">CanadianBill</h1>
-          <div class="header-contact-container">
-            <div is="dmx-swiper" id="headercontactswiper" centered-slides="true" vertical="true" autoplay="true" loop="true" auto-height="true" style="height: 2.5em; margin-top: -1.5em; --swiper-pagination-color: #f00;" pagination="bullets" rewind="true">
-              <div class="swiper-slide">
-                <a href="mailto:canadianbill@gmail.com" class="header-contact-link">canadianbill@gmail.com</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://steamcommunity.com/id/canadianbill" class="header-contact-link">steamcommunity.com/id/canadianbill</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://www.youtube.com/canadianbill" class="header-contact-link">youtube.com/canadianbill</a>
-              </div>
-              <div class="swiper-slide">
-                <a href="https://www.discord.com/users/canadianbill" class="header-contact-link">discord.com/users/canadianbill</a>
+      <div class="container header-container mb-xl-n4" style="margin-bottom:-0em">
+        <div class="row flex-nowrap" style="margin-top:4em">
+          <div class="col col-12 align-self-lg-center">
+            <div class="header-leaf-container">
+              <video autoplay="" loop="" muted="" playsinline="" class="header-leaf-video">
+                <source src="assets/videos/leaf-glimmer-512-webm.webm">
+              </video>
+            </div>
+            <div class="container text-center">
+              <h1 class="header-canadianbill">CanadianBill</h1>
+              <div class="header-contact-container">
+                <div is="dmx-swiper" id="headercontactswiper" centered-slides="true" vertical="true" autoplay="true" loop="true" style="height: 2.5em; margin-top: -1.5em; --swiper-pagination-color: #f00;" pagination="bullets" rewind="true" auto-height="true">
+                  <div class="swiper-slide">
+                    <a href="mailto:canadianbill@gmail.com" class="header-contact-link">canadianbill@gmail.com</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://steamcommunity.com/id/canadianbill" class="header-contact-link">steamcommunity.com/id/canadianbill</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.youtube.com/canadianbill" class="header-contact-link">youtube.com/canadianbill</a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://www.discord.com/users/canadianbill" class="header-contact-link">discord.com/users/canadianbill</a>
+                  </div>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
-        <video autoplay="" loop="" muted="" playsinline="" class="header-leaf"></video>
       </div>
     </div>
   </header>
 
   <nav class="navbar navbar-toggleable navbar-inverse justify-content-center navbar-expand-lg bg-light navbar-light sticky-top">
-
     <a class="navbar-brand d-flex w-100 mr-0" href="#">
       <div class="bg-transparent container" style="margin:0 0 0 0">
         <div class="row flex-nowrap">
@@ -71,7 +73,6 @@
             <div style="display: inline" is="dmx-animate" id="navBrandAnimated" showeffect="fadeInLeft" dmx-bind:visible="browser1.scrollY.offset&gt;256" hideeffect="fadeOutLeftBig">
               <div class="row">
                 <video autoplay="" loop="" muted="" playsinline="" class="nav-leaf">
-                  <source src="assets/videos/leaf-glimmer-512-mp4">
                   <source src="assets/videos/leaf-glimmer-512-webm.webm">
                 </video>
                 <div class="col align-self-center">
