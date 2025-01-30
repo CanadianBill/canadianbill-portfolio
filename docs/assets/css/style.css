@@ -1,4 +1,5 @@
-@font-face { font-family: Futura; src: url('../fonts/FuturaCyrillicLight.ttf'); } 
+@font-face { font-family: FuturaLight; src: url('../fonts/FuturaCyrillicLight.ttf'); } 
+@font-face { font-family: Futura; src: url('../fonts/FuturaCyrillicBook.ttf'); } 
 @font-face { font-family: Montserrat; src: url('../fonts/Montserrat-Regular.ttf'); } 
  
 section {
@@ -25,6 +26,9 @@ dt {
 }
 dd {
 	font-family: "Futura"
+}
+.light-stroke {
+	font-family: 'FuturaLight';
 }
 a:link {
   color: #FF0000;
@@ -79,7 +83,8 @@ h5 {
  	width: 40vw;
 }
 .header-contact-link {
-	font-size: min(1.5em, 2.25vw)
+	font-size: min(1.5em, 2.25vw);
+	font-family: 'FuturaLight';
 }
 .navbar {
 	padding-top: 4px;
